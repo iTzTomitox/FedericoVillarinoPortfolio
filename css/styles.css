@@ -30,13 +30,12 @@
 
 
 /* ---------- 2. Reset ---------- */
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-*::before,*::after { 
-  box-sizing: border-box; 
 }
 
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
@@ -152,6 +151,9 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-family: var(--display);
   font-size: 0.9375rem;
   letter-spacing: -0.01em;
+}
+
+.nav__marca img {
   width: auto;
   height: 1.125rem;
 }
@@ -625,7 +627,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
   .grilla--resenas { grid-template-columns: repeat(2, 1fr); }
 
-  .resena--destacada { grid-column: 1 / -1; }
+    .resena--destacada { grid-column: 1 / -1; order: -1; }
 
   .nota { grid-template-columns: 1fr 1fr; align-items: start; }
 
@@ -664,8 +666,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 
   .nav__marca { 
     font-size: 1.75rem; 
-    height: 1.625rem;
   }
+
+  .nav__marca img { height: 1.625rem; }
 
   .nav__burger { display: none; }
 
@@ -740,6 +743,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
   .resena--destacada {
     grid-column: auto;
+    order: 0;
     padding: 2.5rem;
     opacity: 1;
   }
