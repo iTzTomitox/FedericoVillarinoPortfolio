@@ -519,9 +519,7 @@ h1, h2, h3 {
  
 .pie__redes a:hover { border-color: var(--cyan); background-color: rgba(61, 230, 255, 0.15); }
  
-/* =========================================================
-   BREAK POINT 1 — 48em (768px): tamaño mediano
-   ========================================================= */
+/* BREAK POINT 1 — 48em (768px): tamaño mediano */
 @media screen and (min-width: 48em) {
  
   :root {
@@ -560,9 +558,7 @@ h1, h2, h3 {
   .pie__redes { grid-column: 2 / 3; grid-row: 1 / 3; }
 }
  
-/* =========================================================
-   BREAK POINT 2 — 75em (1200px): tamaño grande
-   ========================================================= */
+/* BREAK POINT 2 — 75em (1200px): tamaño grande */
 @media screen and (min-width: 75em) {
  
   :root {
