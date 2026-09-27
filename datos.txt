@@ -1,0 +1,12 @@
+ALUMNO: Berón, Tomás Nahuel
+CARRERA: Diseño Multimedial
+MATERIA: Maquetado y Desarrollo Web
+COMISIÓN: DMN2CV
+TURNO: Noche
+AÑO DE CURSADA: 2026
+
+OPCIÓN DE DESARROLLO: Primera opción — dos break points (48em / 768px y 75em / 1200px),
+tres tamaños de viewport: pequeño, mediano y grande. Resolución mínima probada: 320px.
+
+SITIO: One Page — portfolio audiovisual "Federico Villarino"
+ARCHIVOS: index.html · css/styles.css · img/
