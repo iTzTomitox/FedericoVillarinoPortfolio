@@ -10,206 +10,224 @@
         Cursada 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Hegarty&family=Montserrat:wght@400;500;600&family=Roboto+Mono:wght@400&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Hegarty&family=Montserrat:wght@400;500;600&family=Roboto+Mono:wght@400&display=swap">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
     <main>
-    <div class="portada">
-      <header class="hero" id="inicio">
+        <div class="portada">
+            <header class="hero" id="inicio">
 
-        <nav class="nav" aria-label="Navegación principal">
-            <a class="nav__marca" href="#inicio">
-                    <img src="img/isologo.svg" alt="Federico Villarino" width="326" height="20">
-            </a>
-            <input class="nav__check" type="checkbox" id="menu" aria-label="Abrir menú" hidden>
-            <label class="nav__burger" for="menu">
-                <span></span><span></span><span></span>
-            </label>
-            <ul class="nav__links">
-                <li><a href="#servicios">SERVICIOS</a></li>
-                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
-                <li><a href="#contacto">CONTACTAME</a></li>
-                <li><a href="#resenas">RESEÑAS</a></li>
-            </ul>
-        </nav>
+                <nav class="nav" aria-label="Navegación principal">
+                    <a class="nav__marca" href="#inicio">
+                        
+                        <img src="img/isologo.svg" alt="Federico Villarino" width="326" height="20">
+                    </a>
+                    <input class="nav__check" type="checkbox" id="menu" aria-label="Abrir menú" hidden>
+                    <label class="nav__burger" for="menu">
+                        <span></span><span></span><span></span>
+                    </label>
+                    <ul class="nav__links">
+                        <li><a href="#servicios">SERVICIOS</a></li>
+                        <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                        <li><a href="#resenas">RESEÑAS</a></li>
+                        <li><a href="#contacto">CONTACTAME</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <div class="hero__contenido">
-            <p class="hero__kicker">Hola, me llamo</p>
-            <h1 class="hero__titulo">FEDERICO</h1>
-            <p class="hero__bajada">
-                Trabajo el sonido, el montaje y la imagen de proyectos audiovisuales.
-                Del rodaje a la entrega final, con criterio narrativo y prolijidad técnica.
-            </p>
-            <div class="hero__acciones">
-                <a class="boton boton--solido" href="#contacto">TRABAJEMOS JUNTOS</a>
-                <a class="boton boton--linea" href="#trabajos">VER TRABAJOS</a>
-            </div>
+            <section class="hero__contenido">
+                <p class="hero__kicker">Hola, me llamo</p>
+                <h1 class="hero__titulo">FEDERICO</h1>
+                <p class="hero__bajada">
+                    Trabajo el sonido, el montaje y la imagen de proyectos audiovisuales.
+                    Del rodaje a la entrega final, con criterio narrativo y prolijidad técnica.
+                </p>
+                <div class="hero__acciones">
+                    <a class="boton boton--solido" href="#contacto">TRABAJEMOS JUNTOS</a>
+                    <a class="boton boton--linea" href="#trabajos">VER TRABAJOS</a>
+                </div>
+            </section>
+
+            <section class="seccion" id="servicios">
+                <h2 class="titulo">SERVICIOS</h2>
+
+                <div class="grilla grilla--servicios">
+
+                    <article class="card">
+                        <figure class="card__media">
+                            <img src="img/servicio-sonido-directo.png"
+                                alt="Sonido directo en exteriores con caña y micrófono" loading="lazy" width="451"
+                                height="212">
+                        </figure>
+                        <div class="card__texto">
+                            <h3>SONIDO DIRECTO</h3>
+                            <p>Captura en rodaje y en vivo: microfoneo, balance de niveles y resolución de imprevistos
+                                sobre
+                                la marcha.</p>
+                            <p class="mono">CONSOLA EN VIVO · BOOM · LAVALIER</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <figure class="card__media">
+                            <img src="img/servicio-post-audio.png"
+                                alt="Consola y monitores en sala de postproducción de audio" loading="lazy" width="451"
+                                height="212">
+                        </figure>
+                        <div class="card__texto">
+                            <h3>POST DE AUDIO</h3>
+                            <p>Limpieza, edición, doblaje y mezcla final. Diálogos inteligibles y una mezcla que respeta
+                                la
+                                escena.</p>
+                            <p class="mono">NUENDO · REAPER · IZOTOPE RX</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <figure class="card__media">
+                            <img src="img/servicio-montaje.png"
+                                alt="Editor trabajando en una línea de tiempo de montaje" loading="lazy" width="451"
+                                height="212">
+                        </figure>
+                        <div class="card__texto">
+                            <h3>MONTAJE</h3>
+                            <p>Armado de la estructura, ritmo y decisiones narrativas. El corte es donde la película se
+                                termina de escribir.</p>
+                            <p class="mono">PREMIERE PRO · DAVINCI RESOLVE</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <figure class="card__media">
+                            <img src="img/servicio-color.png"
+                                alt="Estación de corrección de color con monitor de referencia" loading="lazy"
+                                width="451" height="212">
+                        </figure>
+                        <div class="card__texto">
+                            <h3>COLOR</h3>
+                            <p>Corrección primaria, balance entre planos y look final coherente con el tono del
+                                proyecto.
+                            </p>
+                            <p class="mono">RESOLVE · REC.709 · ENTREGA 4K</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <figure class="card__media">
+                            <img src="img/servicio-fotografia.png" alt="Fotógrafo cubriendo un evento con cámara réflex"
+                                loading="lazy" width="451" height="212">
+                        </figure>
+                        <div class="card__texto">
+                            <h3>FOTOGRAFÍA</h3>
+                            <p>Cobertura de eventos, registro de rodaje y retratos. Foto de evento entregada rápido y
+                                editada.</p>
+                            <p class="mono">COBERTURA · RETRATO · REGISTRO</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <figure class="card__media">
+                            <img src="img/servicio-streaming.png"
+                                alt="Operador de streaming frente a un switcher multicámara" loading="lazy" width="451"
+                                height="212">
+                        </figure>
+                        <div class="card__texto">
+                            <h3>STREAMING</h3>
+                            <p>Armado y operación de transmisiones en vivo: switcheo, audio y monitoreo de la señal.</p>
+                            <p class="mono">OPERADOR DE STREAMING · MULTICÁMARA</p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
         </div>
-    </header>
-
-        <section class="seccion" id="servicios">
-            <h2 class="titulo">SERVICIOS</h2>
-
-            <div class="grilla grilla--servicios">
-
-                <article class="card">
-                    <figure class="card__media">
-                        <img src="img/servicio-sonido-directo.png"
-                            alt="Sonido directo en exteriores con caña y micrófono" loading="lazy" width="451"
-                            height="212">
-                    </figure>
-                    <div class="card__texto">
-                        <h3>SONIDO DIRECTO</h3>
-                        <p>Captura en rodaje y en vivo: microfoneo, balance de niveles y resolución de imprevistos sobre
-                            la marcha.</p>
-                        <p class="mono">CONSOLA EN VIVO · BOOM · LAVALIER</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <figure class="card__media">
-                        <img src="img/servicio-post-audio.png"
-                            alt="Consola y monitores en sala de postproducción de audio" loading="lazy" width="451"
-                            height="212">
-                    </figure>
-                    <div class="card__texto">
-                        <h3>POST DE AUDIO</h3>
-                        <p>Limpieza, edición, doblaje y mezcla final. Diálogos inteligibles y una mezcla que respeta la
-                            escena.</p>
-                        <p class="mono">NUENDO · REAPER · IZOTOPE RX</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <figure class="card__media">
-                        <img src="img/servicio-montaje.png" alt="Editor trabajando en una línea de tiempo de montaje"
-                            loading="lazy" width="451" height="212">
-                    </figure>
-                    <div class="card__texto">
-                        <h3>MONTAJE</h3>
-                        <p>Armado de la estructura, ritmo y decisiones narrativas. El corte es donde la película se
-                            termina de escribir.</p>
-                        <p class="mono">PREMIERE PRO · DAVINCI RESOLVE</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <figure class="card__media">
-                        <img src="img/servicio-color.png"
-                            alt="Estación de corrección de color con monitor de referencia" loading="lazy" width="451"
-                            height="212">
-                    </figure>
-                    <div class="card__texto">
-                        <h3>COLOR</h3>
-                        <p>Corrección primaria, balance entre planos y look final coherente con el tono del proyecto.
-                        </p>
-                        <p class="mono">RESOLVE · REC.709 · ENTREGA 4K</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <figure class="card__media">
-                        <img src="img/servicio-fotografia.png" alt="Fotógrafo cubriendo un evento con cámara réflex"
-                            loading="lazy" width="451" height="212">
-                    </figure>
-                    <div class="card__texto">
-                        <h3>FOTOGRAFÍA</h3>
-                        <p>Cobertura de eventos, registro de rodaje y retratos. Foto de evento entregada rápido y
-                            editada.</p>
-                        <p class="mono">COBERTURA · RETRATO · REGISTRO</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <figure class="card__media">
-                        <img src="img/servicio-streaming.png"
-                            alt="Operador de streaming frente a un switcher multicámara" loading="lazy" width="451"
-                            height="212">
-                    </figure>
-                    <div class="card__texto">
-                        <h3>STREAMING</h3>
-                        <p>Armado y operación de transmisiones en vivo: switcheo, audio y monitoreo de la señal.</p>
-                        <p class="mono">OPERADOR DE STREAMING · MULTICÁMARA</p>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-              </div>
 
         <section class="seccion seccion--clara" id="trabajos">
             <h2 class="titulo titulo--oscuro">TRABAJOS</h2>
 
-    <div class="grilla grilla--trabajos">
+            <div class="grilla grilla--trabajos">
 
-      <a class="trabajo" href="https://drive.google.com/file/d/1aWMAjLai_IpxpI15Di4-a5Phpwc87WpI/view?usp=sharing" target="_blank" rel="noopener">
-        <div class="trabajo__media">
-          <img class="trabajo__poster" src="img/sinsenal.png" alt="Fotograma del cortometraje Sin Señal" loading="lazy" width="684" height="385">
-          <img class="trabajo__loop" src="img/sinsenal.gif" alt="" aria-hidden="true" loading="lazy">
-          <span class="trabajo__badge mono">CORTO · DRIVE</span>
-          <span class="trabajo__play" aria-hidden="true"></span>
-        </div>
-        <div class="trabajo__info">
-          <h3>SIN SEÑAL</h3>
-          <p class="trabajo__meta">
-            <span>Montaje y diseño sonoro</span>
-            <span class="mono">2025</span>
-          </p>
-        </div>
-      </a>
+                <a class="trabajo"
+                    href="https://drive.google.com/file/d/1aWMAjLai_IpxpI15Di4-a5Phpwc87WpI/view?usp=sharing"
+                    target="_blank" rel="noopener">
+                    <div class="trabajo__media">
+                        <img class="trabajo__poster" src="img/sinsenal.png" alt="Fotograma del cortometraje Sin Señal"
+                            loading="lazy" width="684" height="385">
+                        <img class="trabajo__loop" src="img/sinsenal.gif" alt="" aria-hidden="true" loading="lazy">
+                        <span class="trabajo__badge mono">CORTO · DRIVE</span>
+                        <span class="trabajo__play" aria-hidden="true"></span>
+                    </div>
+                    <div class="trabajo__info">
+                        <h3>SIN SEÑAL</h3>
+                        <p class="trabajo__meta">
+                            <span>Montaje y diseño sonoro</span>
+                            <span class="mono">2025</span>
+                        </p>
+                    </div>
+                </a>
 
-    <a class="trabajo" href="https://drive.google.com/file/d/1vaxKDvId9t4bO-pun409pYf3lwe-634y/view?usp=sharing" target="_blank" rel="noopener">
-        <div class="trabajo__media">
-          <img class="trabajo__poster" src="img/contractus.png" alt="Fotograma del cortometraje Contractus" loading="lazy" width="684" height="385">
-          <img class="trabajo__loop" src="img/contractus.gif" alt="" aria-hidden="true" loading="lazy">
-          <span class="trabajo__badge mono">CORTO · DRIVE</span>
-          <span class="trabajo__play" aria-hidden="true"></span>
-        </div>
-        <div class="trabajo__info">
-          <h3>CONTRACTUS</h3>
-          <p class="trabajo__meta">
-            <span>Sonido directo y mezcla</span>
-            <span class="mono">2025</span>
-          </p>
-        </div>
-      </a>
+                <a class="trabajo"
+                    href="https://drive.google.com/file/d/1vaxKDvId9t4bO-pun409pYf3lwe-634y/view?usp=sharing"
+                    target="_blank" rel="noopener">
+                    <div class="trabajo__media">
+                        <img class="trabajo__poster" src="img/contractus.png"
+                            alt="Fotograma del cortometraje Contractus" loading="lazy" width="684" height="385">
+                        <img class="trabajo__loop" src="img/contractus.gif" alt="" aria-hidden="true" loading="lazy">
+                        <span class="trabajo__badge mono">CORTO · DRIVE</span>
+                        <span class="trabajo__play" aria-hidden="true"></span>
+                    </div>
+                    <div class="trabajo__info">
+                        <h3>CONTRACTUS</h3>
+                        <p class="trabajo__meta">
+                            <span>Sonido directo y mezcla</span>
+                            <span class="mono">2025</span>
+                        </p>
+                    </div>
+                </a>
 
-      <a class="trabajo" href="https://drive.google.com/file/d/1QwrYlB_0iH9iJwA7buTIDZfvNRJIgdLX/view?usp=sharing" target="_blank" rel="noopener">
-        <div class="trabajo__media">
-          <img class="trabajo__poster" src="img/jacquet.png" alt="Fotograma del cortometraje Jacquet" loading="lazy" width="684" height="385">
-          <img class="trabajo__loop" src="img/jacquet.gif" alt="" aria-hidden="true" loading="lazy">
-          <span class="trabajo__badge mono">CORTO · DRIVE</span>
-          <span class="trabajo__play" aria-hidden="true"></span>
-        </div>
-        <div class="trabajo__info">
-          <h3>JACQUET</h3>
-          <p class="trabajo__meta">
-            <span>Dirección y montaje</span>
-            <span class="mono">2026</span>
-          </p>
-        </div>
-      </a>
+                <a class="trabajo"
+                    href="https://drive.google.com/file/d/1QwrYlB_0iH9iJwA7buTIDZfvNRJIgdLX/view?usp=sharing"
+                    target="_blank" rel="noopener">
+                    <div class="trabajo__media">
+                        <img class="trabajo__poster" src="img/jacquet.png" alt="Fotograma del cortometraje Jacquet"
+                            loading="lazy" width="684" height="385">
+                        <img class="trabajo__loop" src="img/jacquet.gif" alt="" aria-hidden="true" loading="lazy">
+                        <span class="trabajo__badge mono">CORTO · DRIVE</span>
+                        <span class="trabajo__play" aria-hidden="true"></span>
+                    </div>
+                    <div class="trabajo__info">
+                        <h3>JACQUET</h3>
+                        <p class="trabajo__meta">
+                            <span>Dirección y montaje</span>
+                            <span class="mono">2026</span>
+                        </p>
+                    </div>
+                </a>
 
-      <a class="trabajo" href="https://drive.google.com/file/d/1XHTvOqkvevLOHDtqRXR0E7i2RzDjUWpH/view?usp=sharing" target="_blank" rel="noopener">
-        <div class="trabajo__media">
-          <img class="trabajo__poster" src="img/fanatico.png" alt="Fotograma del cortometraje Fanático" loading="lazy" width="684" height="385">
-          <img class="trabajo__loop" src="img/fanatico.gif" alt="" aria-hidden="true" loading="lazy">
-          <span class="trabajo__badge mono">CORTO · DRIVE</span>
-          <span class="trabajo__play" aria-hidden="true"></span>
-        </div>
-        <div class="trabajo__info">
-          <h3>FANÁTICO</h3>
-          <p class="trabajo__meta">
-            <span>Cámara y postproducción</span>
-            <span class="mono">2026</span>
-          </p>
-        </div>
-      </a>
+                <a class="trabajo"
+                    href="https://drive.google.com/file/d/1XHTvOqkvevLOHDtqRXR0E7i2RzDjUWpH/view?usp=sharing"
+                    target="_blank" rel="noopener">
+                    <div class="trabajo__media">
+                        <img class="trabajo__poster" src="img/fanatico.png" alt="Fotograma del cortometraje Fanático"
+                            loading="lazy" width="684" height="385">
+                        <img class="trabajo__loop" src="img/fanatico.gif" alt="" aria-hidden="true" loading="lazy">
+                        <span class="trabajo__badge mono">CORTO · DRIVE</span>
+                        <span class="trabajo__play" aria-hidden="true"></span>
+                    </div>
+                    <div class="trabajo__info">
+                        <h3>FANÁTICO</h3>
+                        <p class="trabajo__meta">
+                            <span>Cámara y postproducción</span>
+                            <span class="mono">2026</span>
+                        </p>
+                    </div>
+                </a>
 
-    </div>
+            </div>
         </section>
 
         <section class="seccion seccion--clara" id="sobre-mi">
@@ -222,20 +240,20 @@
                 </figure>
 
                 <div class="nota__texto">
-                    <p>Me llamo Federico Agustín Biennati Villarino, vivo en Luis Guillón y estoy terminando la
-                        Licenciatura en Audiovisión en la Universidad Nacional de Lanús. Trabajo en sonido, montaje y
-                        fotografía, y cada proyecto que tomo lo acompaño de punta a punta.</p>
+                    <p>Me llamo <strong>Federico Agustín Biennati Villarino</strong>, vivo en Luis Guillón y estoy terminando la
+                        <em>Licenciatura en Audiovisión</em> en la <em>Universidad Nacional de Lanús</em>. <Strong>Trabajo en sonido, montaje y
+                        fotografía</Strong>, y cada proyecto que tomo lo acompaño de punta a punta.</p>
                     <p>Empecé en 2023 haciendo sonido para producciones académicas y montando cortos de compañeros.
                         Trabajos chicos, con equipos prestados y plazos cortos, donde aprendí lo que ninguna cursada
                         enseña: resolver con lo que hay y entregar igual, en fecha.</p>
-                    <p>Mi lugar más cómodo sigue siendo la consola. Hice el sonido en vivo de Rock UNLa 2025, asistiendo
+                    <p>Mi lugar más cómodo sigue siendo la consola. Hice el <strong>sonido en vivo de <em>Rock UNLa 2025</em></strong>, asistiendo
                         en el balance de niveles y resolviendo imprevistos con el equipo técnico mientras el show ya
                         estaba en el aire.</p>
-                    <p>En postproducción trabajo con Nuendo, Reaper e iZotope RX para audio, y con Premiere Pro y
-                        DaVinci Resolve para imagen y color. Entiendo el montaje como una decisión narrativa antes que
+                    <p>En <strong>postproducción trabajo con Nuendo, Reaper e iZotope RX para audio, y con Premiere Pro y
+                        DaVinci Resolve para imagen y color</strong>. Entiendo el montaje como una decisión narrativa antes que
                         técnica: dónde cortar define qué siente el espectador.</p>
-                    <p>Desde marzo de 2026 doy talleres de introducción al lenguaje audiovisual en la Escuelita
-                        Audiovisual de “La UNLa de los Jóvenes”. Diseño los contenidos y acompaño a los chicos en sus
+                    <p>Desde marzo de 2026 doy <strong>talleres de introducción al lenguaje audiovisual</strong> en la <em>Escuelita
+                        Audiovisual de “La UNLa de los Jóvenes”</em>. Diseño los contenidos y acompaño a los chicos en sus
                         primeras producciones, con devoluciones de cámara, sonido y edición.</p>
                     <p>Trabajo bien con plazos claros y presupuestos hablados de entrada. Prefiero decir que algo no
                         entra en el tiempo disponible antes que entregar una mezcla apurada. Si el proyecto te importa,

@@ -23,6 +23,8 @@
   --espacio-seccion: 3.5rem;
   --gap: 1rem;
 }
+
+
  
 /* ---------- Reseteo de estilos ---------- */
 *,
@@ -116,18 +118,22 @@ h1, h2, h3 {
   background-repeat: no-repeat;
 }
  
-.hero {
-  position: relative;
+.hero { position: relative; }
+
+.hero__contenido {
   min-height: 39.375rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 var(--lateral) 2.5rem;
+  padding: 250px var(--lateral) 2.5rem;
   color: var(--blanco);
 }
  
 .nav {
-  position: absolute;
+  background-color: #0a0a0ae4;
+  backdrop-filter: blur(10px);
+  z-index: 99;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -172,8 +178,7 @@ h1, h2, h3 {
 .nav__check:checked ~ .nav__links { display: flex; }
  
 .nav__links a:hover { color: var(--cyan); }
- 
-.hero__contenido { max-width: 42.75rem; }
+
  
 .hero__kicker {
   font-weight: 600;
@@ -182,7 +187,7 @@ h1, h2, h3 {
 }
  
 .hero__titulo {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
  
@@ -529,7 +534,7 @@ h1, h2, h3 {
  
   .titulo { font-size: 3.25rem; }
  
-  .hero { min-height: 80vh; }
+.hero__contenido { min-height: 80vh; }
  
   .hero__kicker { font-size: 2.25rem; }
  
@@ -569,13 +574,12 @@ h1, h2, h3 {
  
   .titulo { font-size: 4.625rem; line-height: 0.92; margin-bottom: 2.5rem; }
  
-  .hero {
+  .hero__contenido {
     min-height: 90vh;
     padding-bottom: 6rem;
     justify-content: center;
   }
  
-  .hero__contenido { width: 100%; max-width: var(--ancho-contenido); margin: 0 auto; }
  
   .hero__kicker { font-size: 5rem; }
  
@@ -593,10 +597,11 @@ h1, h2, h3 {
     position: static;
     display: flex;
     flex-direction: row;
-    gap: 1.75rem;
+    gap: clamp(0.75rem, 1.15vw, 1.40rem);
     padding: 0;
     background: transparent;
-    font-size: 1.75rem;
+    font-size: clamp(1rem, 1.45vw, 1.75rem);
+    white-space: nowrap;
   }
  
   .grilla--servicios { grid-template-columns: repeat(3, 1fr); }
