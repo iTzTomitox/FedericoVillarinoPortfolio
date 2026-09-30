@@ -13,6 +13,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Hegarty&family=Montserrat:wght@400;500;600&family=Roboto+Mono:wght@400&display=swap">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/menu.js" defer></script>
 </head>
 
 <body>
@@ -23,8 +24,8 @@
 
                 <nav class="nav" aria-label="Navegación principal">
                     <a class="nav__marca" href="#inicio">
-                        
-                        <img src="img/isologo.svg" alt="Federico Villarino" width="326" height="20">
+
+                        <img src="img/isologo.svg" alt="Federico Villarino" width="63" height="48">
                     </a>
                     <input class="nav__check" type="checkbox" id="menu" aria-label="Abrir menú" hidden>
                     <label class="nav__burger" for="menu">
@@ -240,24 +241,35 @@
                 </figure>
 
                 <div class="nota__texto">
-                    <p>Me llamo <strong>Federico Agustín Biennati Villarino</strong>, vivo en Luis Guillón y estoy terminando la
-                        <em>Licenciatura en Audiovisión</em> en la <em>Universidad Nacional de Lanús</em>. <Strong>Trabajo en sonido, montaje y
-                        fotografía</Strong>, y cada proyecto que tomo lo acompaño de punta a punta.</p>
+                    <p>Me llamo <strong>Federico Agustín Biennati Villarino</strong>, vivo en Luis Guillón y estoy
+                        terminando la
+                        <em>Licenciatura en Audiovisión</em> en la <em>Universidad Nacional de Lanús</em>.
+                        <strong>Trabajo en sonido, montaje y
+                            fotografía</strong>, y cada proyecto que tomo lo acompaño de punta a punta.
+                    </p>
                     <p>Empecé en 2023 haciendo sonido para producciones académicas y montando cortos de compañeros.
                         Trabajos chicos, con equipos prestados y plazos cortos, donde aprendí lo que ninguna cursada
                         enseña: resolver con lo que hay y entregar igual, en fecha.</p>
-                    <p>Mi lugar más cómodo sigue siendo la consola. Hice el <strong>sonido en vivo de <em>Rock UNLa 2025</em></strong>, asistiendo
+                    <p>Mi lugar más cómodo sigue siendo la consola. Hice el <strong>sonido en vivo de <em>Rock UNLa
+                                2025</em></strong>, asistiendo
                         en el balance de niveles y resolviendo imprevistos con el equipo técnico mientras el show ya
                         estaba en el aire.</p>
-                    <p>En <strong>postproducción trabajo con Nuendo, Reaper e iZotope RX para audio, y con Premiere Pro y
-                        DaVinci Resolve para imagen y color</strong>. Entiendo el montaje como una decisión narrativa antes que
+                    <input class="nota__check" type="checkbox" id="mas-texto" hidden>
+                    <p>En <strong>postproducción trabajo con Nuendo, Reaper e iZotope RX para audio, y con Premiere Pro
+                            y
+                            DaVinci Resolve para imagen y color</strong>. Entiendo el montaje como una decisión
+                        narrativa antes que
                         técnica: dónde cortar define qué siente el espectador.</p>
-                    <p>Desde marzo de 2026 doy <strong>talleres de introducción al lenguaje audiovisual</strong> en la <em>Escuelita
-                        Audiovisual de “La UNLa de los Jóvenes”</em>. Diseño los contenidos y acompaño a los chicos en sus
-                        primeras producciones, con devoluciones de cámara, sonido y edición.</p>
+                    <p>Desde marzo de 2026 doy <strong>talleres de introducción al lenguaje audiovisual</strong> en la
+                        <em>Escuelita
+                            Audiovisual de “La UNLa de los Jóvenes”</em>. Diseño los contenidos y acompaño a los chicos
+                        en sus
+                        primeras producciones, con devoluciones de cámara, sonido y edición.
+                    </p>
                     <p>Trabajo bien con plazos claros y presupuestos hablados de entrada. Prefiero decir que algo no
                         entra en el tiempo disponible antes que entregar una mezcla apurada. Si el proyecto te importa,
                         escribime: la primera conversación es para entender qué necesitás.</p>
+                    <label class="nota__mas" for="mas-texto"></label>
                 </div>
             </div>
         </section>
@@ -269,8 +281,10 @@
 
                 <article class="resena">
                     <span class="resena__comilla" aria-hidden="true">“</span>
-                    <p class="resena__texto">“Montó mi corto en dos semanas y encontró una estructura que yo no veía.
-                        Entregó la mezcla con el proyecto ordenado y todo documentado.”</p>
+                    <blockquote class="resena__texto">
+                        <p>“Montó mi corto en dos semanas y encontró una estructura que yo no veía.
+                            Entregó la mezcla con el proyecto ordenado y todo documentado.”</p>
+                    </blockquote>
                     <div class="resena__persona">
                         <img class="resena__foto" src="img/resena-nicolas.png" alt="Retrato de Nicolás Ferreyra"
                             loading="lazy" width="48" height="48">
@@ -283,8 +297,11 @@
 
                 <article class="resena resena--destacada">
                     <span class="resena__comilla" aria-hidden="true">“</span>
-                    <p class="resena__texto">“Lo llamamos para el sonido del festival y terminó coordinando medio
-                        backstage. Resolvió dos problemas de señal en pleno show sin que el público se enterara.”</p>
+                    <blockquote class="resena__texto">
+                        <p>“Lo llamamos para el sonido del festival y terminó coordinando medio
+                            backstage. Resolvió dos problemas de señal en pleno show sin que el público se enterara.”
+                        </p>
+                    </blockquote>
                     <div class="resena__persona">
                         <img class="resena__foto" src="img/resena-martina.png" alt="Retrato de Martina Aguirre"
                             loading="lazy" width="56" height="56">
@@ -297,8 +314,10 @@
 
                 <article class="resena">
                     <span class="resena__comilla" aria-hidden="true">“</span>
-                    <p class="resena__texto">“Como tallerista tiene una paciencia enorme. Los chicos entendieron plano y
-                        sonido en cuatro clases y se fueron con un ejercicio filmado por ellos.”</p>
+                    <blockquote class="resena__texto">
+                        <p>“Como tallerista tiene una paciencia enorme. Los chicos entendieron plano y
+                            sonido en cuatro clases y se fueron con un ejercicio filmado por ellos.”</p>
+                    </blockquote>
                     <div class="resena__persona">
                         <img class="resena__foto" src="img/resena-carla.png" alt="Retrato de Carla Sosa" loading="lazy"
                             width="48" height="48">
@@ -396,6 +415,7 @@
 
         </div>
     </footer>
+
 
 </body>
 

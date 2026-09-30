@@ -143,7 +143,7 @@ h1, h2, h3 {
   padding: 1.5rem var(--lateral);
 }
  
-.nav__marca img { width: auto; height: 1.125rem; }
+.nav__marca img { width: auto; height: 1.75rem; }
  
 .nav__burger {
   display: flex;
@@ -364,6 +364,28 @@ h1, h2, h3 {
   color: var(--texto-oscuro);
   margin-bottom: 1.125rem;
 }
+
+.nota__check ~ p { display: none; }
+ 
+.nota__check:checked ~ p { display: block; }
+ 
+.nota__mas {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid rgba(18, 18, 18, 0.25);
+  border-radius: var(--radio);
+  color: var(--gris-oscuro);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+ 
+.nota__mas:hover { border-color: var(--gris-oscuro); background-color: rgba(18, 18, 18, 0.05); }
+ 
+.nota__mas::after { content: "VER MÁS"; }
+ 
+.nota__check:checked ~ .nota__mas::after { content: "VER MENOS"; }
  
 /* ---------- Reseñas ---------- */
 .resena {
@@ -589,7 +611,7 @@ h1, h2, h3 {
  
   .nav { padding: 2.5rem var(--lateral); }
  
-  .nav__marca img { height: 1.625rem; }
+  .nav__marca img { height: 2.375rem; }
  
   .nav__burger { display: none; }
  
@@ -631,6 +653,10 @@ h1, h2, h3 {
   }
  
   .nota__texto p { font-size: 0.9375rem; break-inside: avoid; }
+
+    .nota__check ~ p { display: block; }
+ 
+  .nota__mas { display: none; }
  
   .grilla--resenas {
     grid-template-columns: 1fr 1.3625fr 1fr;
